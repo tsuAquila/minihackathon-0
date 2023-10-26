@@ -62,8 +62,7 @@ your_player = choice(players[your_player_rating])
 print("\nYour player is " + your_player)
 print("Rating:", your_player_rating)
 
-print("\n\n\tLETS BEGIN THE MATCH!")
-print("You'll get 1 over for scoring maximum runs... Good luck!\n\n")
+print("\n\tLETS BEGIN THE MATCH!")
 
 runs_scored = 0
 # def runout():
@@ -89,7 +88,7 @@ for i in range(6):  # 1 over contains 6 balls
     
     if not is_out:  # Player is not out, continue playing
         runs_this_ball = choice(bowlers[bowler_type]["runs_conceded"])
-        print(f"\nYou scored {runs_this_ball} runs on {p.ordinal(i+1)} ball!")
+        print(f"You scored {runs_this_ball} runs on {p.ordinal(i+1)} ball!")
         runs_scored += runs_this_ball
     else:  # Player is out
         print("\nOh no! You're out!")
@@ -107,6 +106,6 @@ print("\nTotal runs scored:", runs_scored)
 
 # Store scores in a text file
 with open("cricket_scores.txt", "a") as file:
-    file.write(f"{your_name} {runs_scored}\n")
+    file.write(f"{your_name}  {runs_scored}\n")
 
 # print("\nScores have been saved in 'cricket_scores.txt' file.")
