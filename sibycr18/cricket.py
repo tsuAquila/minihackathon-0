@@ -9,7 +9,6 @@ with open("cricket_scores.txt", "r") as file:
     high_scores = file.readlines()
 
 print("\n**Scoreboard**")
-
 # To display the top N scores
 for index, score in enumerate(high_scores[:10], start=1):
     print(f"{index}. {score.strip()}")
