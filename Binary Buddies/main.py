@@ -12,7 +12,7 @@ Hey there!!!
       Here are the instructions:
       1. The letters in the words will be shifted by a range of -3 to 3, just like in Caesar Cipher
       2. Some of the letters will be missing too.
-      3. You have 5 lifes.
+      3. You have 5 lives.
       4. You got 2 chances to guess the word.
       5. Don't worry, 4 options will also be provided.
       6. If not able to guess the word in 2 chances 1 life will be lost. And you got a total of 5 lives.
@@ -41,9 +41,9 @@ while life >0:
     stage = random.choice(data)
 
     # Generate a random key for the rotation cipher
-    key = random.randint(-2, 2)
+    key = random.randint(-4, 4)
     while key == 0:
-        key = random.randint(-2, 2)
+        key = random.randint(-4, 4)
 
     newstage = rotate(stage, key)
 
@@ -86,7 +86,7 @@ while life >0:
             print("you have 1 more chance.")
         else:
             life -=1
-            print("Wrong! The word was: ", stage,f"\nSorry you lost 1 life.Lifes left : {life}","\n\n")
+            print("\nWrong! The word was: ", stage,f"\nSorry you lost 1 life.Lifes left : {life}","\n\n")
             
 print(f"Congrats,You Scored {score}.")
 
