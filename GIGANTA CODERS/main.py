@@ -68,11 +68,16 @@ newstage = "".join(underscored_stage)
 
 
 print(newstage)
+chance =2
+while chance>0:
 
-
-userv = input("Enter your Guess: ")
-if userv == stage:
-    print("Correct!")
-else:
-    print("Wrong! The word was: ", stage)
+    userv = input("Enter your Guess: ")
+    chance-=1
+    if userv == stage:
+        print("Correct!")
+        break
+    elif chance ==1:
+        print("you have 1 more chance.")
+    else:
+        print("Wrong! The word was: ", stage)
 
