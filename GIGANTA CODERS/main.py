@@ -9,7 +9,19 @@ key = random.randint(-2, 2)
 while key == 0:
     key = random.randint(-2, 2)
 
+print("""
+Hey there!!!
+      Welcome to our word guess game
 
+      Here are the instructions:
+      1. The letters in the words will be shifted by a range of -3 to 3, just like in Caesar Cipher
+      2. Some of the letters will be missing too
+      3. You got 2 chances to guess the word
+      4. Don't worry, 4 options will also be provided
+
+      What to wait, let's play!!!
+
+""")
 def rotate(text, key):
     ref_a = "abcdefghijklmnopqrstuvwxyz"
     ref_A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -30,20 +42,7 @@ def rotate(text, key):
 # Apply rotation cipher to the selected word
 newstage = rotate(stage, key)
 
-# Create a version of the word with underscores
-underscored_stage = list(newstage)
-if len(underscored_stage) > 6:
-    for i in range(len(underscored_stage) // 3):
-        num = random.randint(0, len(underscored_stage) - 1)
-        underscored_stage[num] = "_"
-newstage = "".join(underscored_stage)
-
-
-
-print(stage)
-
-
-print(newstage)
+#printing the options
 samelen =[]
 for i in data:
     if len(i) ==len(stage) and len(samelen)<3:
@@ -55,12 +54,25 @@ while len(samelen) <4:
     word=random.choice(data)
     if word not in samelen:
         samelen.append(word)
-    
+print("""Here are your choices:""")
 print(*samelen)
+print("")
+
+# Create a version of the word with underscores
+underscored_stage = list(newstage)
+if len(underscored_stage) > 6:
+    for i in range(len(underscored_stage) // 3):
+        num = random.randint(0, len(underscored_stage) - 1)
+        underscored_stage[num] = "_"
+newstage = "".join(underscored_stage)
+
+
+print(newstage)
+
 
 userv = input("Enter your Guess: ")
 if userv == stage:
     print("Correct!")
 else:
-    print("Wrong! The word was:", stage)
+    print("Wrong! The word was: ", stage)
 
