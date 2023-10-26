@@ -25,12 +25,12 @@
 
 ### Screenshots
 #### Mainscreen
-![Mainscreen](Binary Buddiesimages/main_screen.png "Mainscreen")
+![Mainscreen](/Binary Buddiesimages/main_screen.png "Mainscreen")
 <br/><br/><br/>
 
 #### Gameplay
-![Gameplay](Binary%20Buddies/images/gameplay.png "Gameplay")
+![Gameplay](/Binary%20Buddies/images/gameplay.png "Gameplay")
 <br/>
 
-![Failscreen](Binary%20Buddies/images/gameplay2.png "Failscreen")
+![Failscreen](/Binary%20Buddies/images/gameplay2.png "Failscreen")
 
