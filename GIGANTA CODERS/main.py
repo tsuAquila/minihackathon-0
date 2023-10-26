@@ -84,7 +84,7 @@ while life >0:
             print("you have 1 more chance.")
         else:
             life -=1
-            print("Wrong! The word was: ", stage,"\nSorry you lost 1 life.Lifes left is {life}","\n\n")
+            print("Wrong! The word was: ", stage,"\nSorry you lost 1 life.Lifes left : {life}","\n\n")
             
 print(f"Congrats,You Scored {score}.")
 
