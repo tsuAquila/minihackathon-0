@@ -1,8 +1,10 @@
 from data import data
+from title import title
 score=0
 life =5
 import random
 
+print(title)
 print("""
 Hey there!!!
       Welcome to our word guess game
@@ -13,7 +15,7 @@ Hey there!!!
       3. You have 5 lifes.
       4. You got 2 chances to guess the word.
       5. Don't worry, 4 options will also be provided.
-      6. If not able to guess the word in 2 chances 1 life will be lost.
+      6. If not able to guess the word in 2 chances 1 life will be lost. And you got a total of 5 lives.
 
       What to wait, let's play!!!
 
@@ -57,7 +59,7 @@ while life >0:
         word=random.choice(data)
         if word not in samelen:
             samelen.append(word)
-    print("Here are your choices:", ", ".join(samelen))
+    print("Here are your choices:\n\t", " / ".join(samelen))
     print("")
 
     # Create a version of the word with underscores
