@@ -7,3 +7,4 @@ test2  4
 test2  0
 test4  1
 test5  20
+test6  10

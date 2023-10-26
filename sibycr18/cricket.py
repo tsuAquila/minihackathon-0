@@ -31,7 +31,7 @@ print("\t\t\t*** Note that players with more ratings score more runs and have mo
 
 
 available_questions = list(trivia_questions.keys())
-for i in range(5):
+for i in range(len(trivia_questions)):
     question_number = choice(available_questions)
     print('Q) ' + trivia_questions[question_number][0])
     annswer = input("\nEnter your choice: ").strip().strip(')').strip('(').lower()
@@ -94,7 +94,7 @@ for i in range(6):  # 1 over contains 6 balls
         print(f"\nOh no! You're out on {p.ordinal(i+1)} ball!\n")
         # print("--Answer this question to get more life--")
         if wickets_left != 0:
-            print(f"You got {wickets_left} more wickets left...")
+            print(f"You got {wickets_left} more wickets left...\n")
             continue
         else:
             print(f"No more wickets left...")
