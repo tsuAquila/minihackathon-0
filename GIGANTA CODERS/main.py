@@ -1,8 +1,7 @@
+
+data = ["goat", "dog", "gate"]
+
 import random
-
-data = ["goat", "dog", "gate", "Shibinsha"]
-
-# Select a random word from the list
 stage = random.choice(data)
 
 # Generate a random key for the rotation cipher
@@ -10,7 +9,7 @@ key = random.randint(-2, 2)
 while key == 0:
     key = random.randint(-2, 2)
 
-# Define a function to rotate the text
+
 def rotate(text, key):
     ref_a = "abcdefghijklmnopqrstuvwxyz"
     ref_A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
