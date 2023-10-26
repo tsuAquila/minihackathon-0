@@ -1,4 +1,4 @@
-# GIGANTA CODERS
+# Binary Buddies
 
 ### Team Members:
 - S Shibinsha
