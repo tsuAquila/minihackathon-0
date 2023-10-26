@@ -21,4 +21,18 @@
 - You have 5 lives.
 - You got 2 chances to guess the word.
 - Don't worry, 4 options will also be provided.
-- If not able to guess the word in 2 chances 1 life will be lost. And you got a total of 5 lives.
+- If not able to guess the word in 2 chances 1 life will be lost.
+
+### Screenshots
+#### Mainscreen
+![Mainscreen](images/main_screen.png "Mainscreen")
+<br/><br/><br/>
+
+#### Gameplay
+![Gameplay](images/gameplay.png "Gameplay")
+<br/>
+
+![Failscreen](images/gameplay2.png "Failscreen")
+
+
+
