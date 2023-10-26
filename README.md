@@ -1,40 +1,36 @@
-# miniHACKATHON #0
-Welcome to our 3-hour Mini Hackathon! Geared towards beginners and first-timers, this rapid event is your chance to explore, build, and ship your project. Unleash your creativity and enjoy the journey of creating something new! 🚀  
-
-# Getting Started
-## Fork the Repository
-- Click on the "Fork" button in the top right corner to create your own copy of this repository.
-## Creating your Project
-- Navigate to the root directory of your forked repository.
-- Create a new folder with your team's name.
-- Add your source code files to this folder.
-- Inside the folder, create a README.md file with the following information:
-```
-# [Team Name]
+# Binary Buddies
 
 ### Team Members:
-- [Member 1]
-- [Member 2]
-- [Member 3]
+- S Shibinsha
+- Jayadev B S
 
 ### Project Title:
-[Your Project's Title]
+- Mystery Letter Quest
 
 ### Description:
-[Brief description of what you built]
+- The game is to guess the word correctly from the given set of words.
+- Inorder to increase the difficulty, all the letters of the word will be shifted by some value. Similar to Caeser Cipher. Some of the letters will be missing too.
+- Each word puzzle got two tries to get the correct answer
 
 ### How we Built It:
-[Brief description of the tools, languages, or technologies used]
+- The game is built in Python and runs entirely on the terminal
 
 ### How to Use It:
-[Brief instructions on how to use your project]
+- The letters in the words will be shifted by a range of -3 to 3, just like in Caesar    Cipher
+- Some of the letters will be missing too.
+- You have 5 lives.
+- You got 2 chances to guess the word.
+- Don't worry, 4 options will also be provided.
+- If not able to guess the word in 2 chances 1 life will be lost.
 
-```
-## Updating the Index
-- Open the index.md file in the root directory.
-- Add your team name and project title in the following format:
-```
-- [Team Name]: [Project Title]
-```
+### Screenshots
+#### Mainscreen
+![Mainscreen](/Binary Buddiesimages/main_screen.png "Mainscreen")
+<br/><br/><br/>
 
-Make a PR when you are done with the project , alright now hack away !
+#### Gameplay
+![Gameplay](/Binary%20Buddies/images/gameplay.png "Gameplay")
+<br/>
+
+![Failscreen](/Binary%20Buddies/images/gameplay2.png "Failscreen")
+
