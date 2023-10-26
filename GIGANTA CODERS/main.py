@@ -1,18 +1,21 @@
-
-data = ["goat", "dog", "gate"]
-
 import random
+
+data = ["goat", "dog", "gate", "Shibinsha"]
+
+# Select a random word from the list
 stage = random.choice(data)
-key = random.randint(-4,4)
+
+# Generate a random key for the rotation cipher
+key = random.randint(-2, 2)
 while key == 0:
-    key = random.randint(-4,4)
+    key = random.randint(-2, 2)
 
-
+# Define a function to rotate the text
 def rotate(text, key):
     ref_a = "abcdefghijklmnopqrstuvwxyz"
     ref_A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    cipher_a = ref_a[key:]+ref_a[:key]
-    cipher_A = ref_A[key:]+ref_A[:key]
+    cipher_a = ref_a[key:] + ref_a[:key]
+    cipher_A = ref_A[key:] + ref_A[:key]
     final = ""
     for letter in text:
         if letter in ref_a:
@@ -25,10 +28,21 @@ def rotate(text, key):
             final += letter
     return final
 
-newstage=rotate(stage,key)
+# Apply rotation cipher to the selected word
+newstage = rotate(stage, key)
+
+# Create a version of the word with underscores
+underscored_stage = list(newstage)
+if len(underscored_stage) > 6:
+    for i in range(len(underscored_stage) // 3):
+        num = random.randint(0, len(underscored_stage) - 1)
+        underscored_stage[num] = "_"
+newstage = "".join(underscored_stage)
+
 print(newstage)
-userv=input("Enter your Guess:")
-if userv ==stage:
-    print("poli")
+
+userv = input("Enter your Guess: ")
+if userv == stage:
+    print("Correct!")
 else:
-    print("poda")
+    print("Wrong! The word was:", stage)
