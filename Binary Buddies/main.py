@@ -15,7 +15,7 @@ Hey there!!!
       3. You have 5 lifes.
       4. You got 2 chances to guess the word.
       5. Don't worry, 4 options will also be provided.
-      6. If not able to guess the word in 2 chances 1 life will be lost. And you got a total of 5 lives.
+      6. If not able to guess the word in 2 chances 1 life will be lost.
 
       What to wait, let's play!!!
 
