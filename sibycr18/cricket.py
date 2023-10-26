@@ -9,12 +9,10 @@ with open("cricket_scores.txt", "r") as file:
     high_scores = file.readlines()
 
 print("\n**Scoreboard**")
-for score in high_scores:
-    print(score.strip())  # Print each score, stripping newline characters
 
-# If you want to display the top N scores, you can modify the loop like this:
-# for index, score in enumerate(scores[:N], start=1):
-#     print(f"{index}. {score.strip()}")
+# To display the top N scores
+for index, score in enumerate(high_scores[:10], start=1):
+    print(f"{index}. {score.strip()}")
 
 # Format of dict -> {question number : [question(with options), correct_choice]}
 trivia_questions = {
