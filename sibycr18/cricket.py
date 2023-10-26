@@ -2,6 +2,7 @@ from random import randint
 from random import choice
 import inflect
 p = inflect.engine()
+from time import sleep
 
 # Read and display scores from the text file
 with open("cricket_scores.txt", "r") as file:
@@ -93,6 +94,7 @@ for i in range(6):  # 1 over contains 6 balls
     else:  # Player is out
         print("\nOh no! You're out!")
         break
+    sleep(1)
 
 print("\nIn your 1 over, you scored", runs_scored, "runs.")
 
@@ -107,5 +109,3 @@ print("\nTotal runs scored:", runs_scored)
 # Store scores in a text file
 with open("cricket_scores.txt", "a") as file:
     file.write(f"{your_name}  {runs_scored}\n")
-
-# print("\nScores have been saved in 'cricket_scores.txt' file.")
