@@ -1,13 +1,12 @@
 
-data = ["goat", "dog", "gate"]
-
 import random
+
 stage = random.choice(data)
 key = random.randint(-4,4)
 while key == 0:
     key = random.randint(-4,4)
 
-
+#Cipher generation
 def rotate(text, key):
     ref_a = "abcdefghijklmnopqrstuvwxyz"
     ref_A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
