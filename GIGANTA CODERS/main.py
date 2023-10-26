@@ -2,12 +2,6 @@ from data import data
 score=0
 
 import random
-stage = random.choice(data)
-
-# Generate a random key for the rotation cipher
-key = random.randint(-2, 2)
-while key == 0:
-    key = random.randint(-2, 2)
 
 print("""
 Hey there!!!
@@ -40,6 +34,13 @@ def rotate(text, key):
     return final
 
 # Apply rotation cipher to the selected word
+stage = random.choice(data)
+
+# Generate a random key for the rotation cipher
+key = random.randint(-2, 2)
+while key == 0:
+    key = random.randint(-2, 2)
+
 newstage = rotate(stage, key)
 
 #printing the options
@@ -54,20 +55,19 @@ while len(samelen) <4:
     word=random.choice(data)
     if word not in samelen:
         samelen.append(word)
-print("""Here are your choices:""")
-print(*samelen)
+print("Here are your choices:", ", ".join(samelen))
 print("")
 
 # Create a version of the word with underscores
 underscored_stage = list(newstage)
 if len(underscored_stage) > 6:
-    for i in range(len(underscored_stage) // 3):
+    for i in range(len(underscored_stage) //4 ):
         num = random.randint(0, len(underscored_stage) - 1)
         underscored_stage[num] = "_"
 newstage = "".join(underscored_stage)
 
 
-print(newstage)
+print("Find the word for:",newstage)
 chance =2
 while chance>0:
 
