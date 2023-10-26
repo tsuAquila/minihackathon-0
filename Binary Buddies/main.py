@@ -88,5 +88,5 @@ while life >0:
             life -=1
             print("Wrong! The word was: ", stage,f"\nSorry you lost 1 life.Lifes left : {life}","\n\n")
             
-print(f"Congrats,You Scored {score}.")
+print(f"Congrats,You Scored {score}.\n")
 
