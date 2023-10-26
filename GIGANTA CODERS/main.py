@@ -1,5 +1,5 @@
 from data import data
-
+score=0
 
 import random
 stage = random.choice(data)
