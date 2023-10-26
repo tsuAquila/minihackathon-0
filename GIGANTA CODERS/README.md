@@ -5,10 +5,10 @@
 - Jayadev B S
 
 ### Project Title:
-
+- The simple word game
 
 ### Description:
-[Brief description of what you built]
+- 
 
 ### How we Built It:
 [Brief description of the tools, languages, or technologies used]
