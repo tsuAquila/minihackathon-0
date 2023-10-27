@@ -10,50 +10,34 @@ ROCK , PAPER , SCISSORS
 
 ### Description:
 
-"Rock, Paper, Scissors" is a simple hand game that is often used to make a decision between two people. In the game, each player simultaneously forms one of three shapes with an outstretched hand. The possible shapes are "rock," "paper," and "scissors." The rules are as follows:
-
-Rock beats scissors (Rock wins)
-Scissors beats paper (Scissors win)
-Paper beats rock (Paper wins)
-
-If both players choose the same shape, the game is a tie, and it is usually played again
+A console-based "ROCK PAPER SCISSORS" game built in Python
 
 ### How we Built It:
-Python: The main programming language for the game.
+This game is built entirely using Python. To enhance the user interface and experience, we've implemented several key features:
 
-Random Module: Enables the computer's random choices.
+Console Management: Using the os and shutil modules, we've made sure the game visuals are consistent across various terminal sizes. The clear_terminal function refreshes the screen after each move, keeping the display clean.
 
-OS Module: Used for operating system interactions, like clearing the screen.
+Input & Visualization: With custom functions, we've achieved centered text in the console, giving the game a polished look.
 
-Time Module: Introduces pauses for suspense.
+User Experience Enhancements: The sleep module is employed to introduce short pauses before clearing the console
 
-Termcolor Module: Provides colored text for enhanced visuals.
+Game Logic: The computer's choices are randomized using the random module, ensuring each round is unpredictable.
+
 
 ### How to Use It:
-Playing Rock, Paper, Scissors is a simple hand game that's typically used to make a decision between two people. The game has straightforward rules:
+Start the Game: Launch the Python script to begin.
+
+Choose Rounds: You'll first be prompted to select how many rounds you'd like to play. Make sure to choose an odd number!
+
+Make Your Move: For each round, you'll choose either ROCK, PAPER, or SCISSORS. Just type in your choice and hit enter.
 
 Rock beats Scissors (Rock wins).
 Scissors beat Paper (Scissors win).
-Paper beats Rock (Paper wins).
-Here's how you can play Rock, Paper, Scissors:
+Paper beats Rock (Paper wins). 
 
-Step 1: Choose Your Weapon
+Await the Result: The computer will make its choice randomly. and the result for that round will be revealed.
 
-You and your opponent decide which of the three options you want to represent: Rock, Paper, or Scissors.
+Final Score: Once all rounds are played, the game will tally up the scores and announce the overall winner.
 
-Step 2: Count Down and Show Your Choice
-
-You and your opponent count down together, for example, by saying "Rock, Paper, Scissors, Shoot!" or any similar phrase.
-On "Shoot," both of you simultaneously form one of the three shapes with an outstretched hand. Make sure to keep your choice hidden until the count is over.
-
-Step 3: Determine the Winner
-
-Compare the choices:
-If both players choose the same shape, the game is a tie, and you might play again.
-If one player's choice beats the other's based on the rules, that player is the winner.
-For example, if one player shows Rock and the other shows Scissors, Rock wins.
-
-Step 4: Play Again (if desired)
-
-If you want to continue, you can play as many rounds as you like.
-Rock, Paper, Scissors is a simple game often used to resolve disputes or make quick decisions. It's typically played for fun and doesn't require any special equipment. The rules are straightforward, making it a popular choice for a quick and fair decision-making game.
+Feel free to restart the game as many times as you'd like. Challenge yourself to best the computer!
+Enjoy and may the best move win!
