@@ -85,7 +85,7 @@ for round in range(rounds):
             print(center_text("\u001b[31;1mROCK SMASHES SCISSORS! YOU LOSE."))
             computer_score += 1
     else:
-        print(center_text("\u001b[31;1mCHECK SPELLINGGGG"))
+        print(center_text("\u001b[31;1mOops! Didn't catch that. Make sure it's either ROCK, PAPER, or SCISSORS!"))
 
     sleep(3)
     clear_terminal()
