@@ -8,9 +8,10 @@
 ### Project Title:
 ROCK , PAPER , SCISSORS
 
-### Description:
 
+### Description:
 A console-based "ROCK PAPER SCISSORS" game built in Python
+
 
 ### How we Built It:
 This game is built entirely using Python. To enhance the user interface and experience, we've implemented several key features:
@@ -39,5 +40,5 @@ Await the Result: The computer will make its choice randomly. and the result for
 
 Final Score: Once all rounds are played, the game will tally up the scores and announce the overall winner.
 
-Feel free to restart the game as many times as you'd like. Challenge yourself to best the computer!
+Feel free to restart the game as many times as you'd like. Challenge yourself to beat the computer!
 Enjoy and may the best move win!

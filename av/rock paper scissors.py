@@ -98,4 +98,3 @@ elif user_score == computer_score:
     print(center_text("\u001b[33;1mITS A TIE :|"))
 else:
     print(center_text("\u001b[31;1mYOU LOSE :("))
-
