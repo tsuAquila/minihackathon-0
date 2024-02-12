@@ -1,0 +1,51 @@
+/* Reset some default styles and set a background color */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+p#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.or-text {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#countdown {
+    font-size: 18px;
+}
+
